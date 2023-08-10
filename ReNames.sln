@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renamer", "ReNames\ReNames.csproj", "{F2EC15D2-57AC-413E-B56C-74F7C8796CD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2EC15D2-57AC-413E-B56C-74F7C8796CD4}.Debug|x86.ActiveCfg = Debug|x86
+		{F2EC15D2-57AC-413E-B56C-74F7C8796CD4}.Debug|x86.Build.0 = Debug|x86
+		{F2EC15D2-57AC-413E-B56C-74F7C8796CD4}.Release|x86.ActiveCfg = Release|x86
+		{F2EC15D2-57AC-413E-B56C-74F7C8796CD4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C14B53AA-81F5-428C-8352-5334000CF8D6}
+	EndGlobalSection
+EndGlobal
