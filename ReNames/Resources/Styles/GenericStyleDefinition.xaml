@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="BrushesStyleDefinition.xaml"/>
+        <ResourceDictionary Source="ButtonsStyleDefinition.xaml"/>
+        <ResourceDictionary Source="ToggleButtonStyleDefinition.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

@@ -11,6 +11,8 @@
   <ItemGroup>
     <None Remove="Icon.ico" />
     <None Remove="Resources\folder.png" />
+    <None Remove="Resources\Images\folder.png" />
+    <None Remove="Resources\Images\refresh.png" />
     <None Remove="Resources\refresh.png" />
   </ItemGroup>
 
@@ -23,12 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\folder.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\refresh.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Resources\Images\folder.png" />
+    <Resource Include="Resources\Images\refresh.png" />
   </ItemGroup>
 
   <ItemGroup>
