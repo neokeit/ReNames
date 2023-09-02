@@ -118,90 +118,90 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ByNeokeit" xml:space="preserve">
-    <value>By @Neokeit</value>
+    <value>Por @Neokeit</value>
   </data>
   <data name="ByPosition" xml:space="preserve">
-    <value>By Position</value>
+    <value>Posición</value>
   </data>
   <data name="ByText" xml:space="preserve">
-    <value>By Text</value>
+    <value>Texto</value>
   </data>
   <data name="ByTextStartEnd" xml:space="preserve">
-    <value>By Start to End</value>
+    <value>Texto Inicio a Fin</value>
   </data>
   <data name="Characters" xml:space="preserve">
-    <value>Characters</value>
+    <value>Caracteres</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Cerrar</value>
   </data>
   <data name="DirectoryPath" xml:space="preserve">
-    <value>Directory Path</value>
+    <value>Ruta directorio</value>
   </data>
   <data name="End" xml:space="preserve">
-    <value>End</value>
+    <value>Fin</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="Example" xml:space="preserve">
-    <value>Example</value>
+    <value>Ejemplo</value>
   </data>
   <data name="Files" xml:space="preserve">
-    <value>Files</value>
+    <value>Archivos</value>
   </data>
   <data name="From" xml:space="preserve">
-    <value>From</value>
+    <value>Desde</value>
   </data>
   <data name="German" xml:space="preserve">
     <value>German</value>
   </data>
   <data name="HideExtensions" xml:space="preserve">
-    <value>Hide Extensions</value>
+    <value>Ocultar Extensiones</value>
   </data>
   <data name="Italian" xml:space="preserve">
     <value>Italian</value>
   </data>
   <data name="Lenguages" xml:space="preserve">
-    <value>Lenguages</value>
+    <value>Idiomas</value>
   </data>
   <data name="Modified" xml:space="preserve">
-    <value>Modified</value>
+    <value>Modificados</value>
   </data>
   <data name="Original" xml:space="preserve">
     <value>Original</value>
   </data>
   <data name="Position" xml:space="preserve">
-    <value>Position</value>
+    <value>Posición</value>
   </data>
   <data name="Referesh" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Actualizar</value>
   </data>
   <data name="ReplacementText" xml:space="preserve">
-    <value>Replacement Text</value>
+    <value>Texto reemplazable</value>
   </data>
   <data name="ReplaceText" xml:space="preserve">
-    <value>Replace Text</value>
+    <value>Texto de reemplazar</value>
   </data>
   <data name="ReplaceType" xml:space="preserve">
-    <value>Replace Type</value>
+    <value>Tipo de reemplazo</value>
   </data>
   <data name="SelectFolder" xml:space="preserve">
-    <value>Select Folder</value>
+    <value>Selecionar carpeta</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Configuración</value>
   </data>
   <data name="ShowOnlyChanges" xml:space="preserve">
-    <value>Show Only Changes</value>
+    <value>Solo mostrar los cambios</value>
   </data>
   <data name="Spanish" xml:space="preserve">
     <value>Spanish</value>
   </data>
   <data name="Start" xml:space="preserve">
-    <value>Start</value>
+    <value>Inicio</value>
   </data>
   <data name="Version" xml:space="preserve">
-    <value>Version:</value>
+    <value>Versión:</value>
   </data>
 </root>

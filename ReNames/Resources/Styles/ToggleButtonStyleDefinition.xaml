@@ -187,9 +187,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
-                    <Grid x:Name="templateRoot" 
-							  Background="Transparent" 
-							  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                    <Grid x:Name="templateRoot" Background="Transparent" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualState x:Name="Normal"/>

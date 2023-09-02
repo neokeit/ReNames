@@ -3,13 +3,37 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
     <system:Double x:Key="FuenteTamañoNormal">12</system:Double>
-    <system:Double x:Key="FuenteTamañoMedio">18</system:Double>
+    <system:Double x:Key="FuenteTamañoMedio">14</system:Double>
     <system:Double x:Key="FuenteTamañoGrande">22</system:Double>
+    <FontFamily x:Key="FontFamily">Sergio UI</FontFamily>
 
-    <LinearGradientBrush x:Key="ColorEstandar" EndPoint="0,1" StartPoint="0,0">
+    <LinearGradientBrush x:Key="ColorBackground" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#FFF3F3F3" Offset="0.0" />
+        <GradientStop Color="#FFF3F3F3" Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ColorPrimario" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#FFFBFBFB" Offset="0.0" />
+        <GradientStop Color="#FFFBFBFB" Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ColorPrimarioBordes" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#FFD2D2D2" Offset="0.0" />
+        <GradientStop Color="#FFD2D2D2" Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ForecolorGroup" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#524F4F" Offset="0.0" />
+        <GradientStop Color="#524F4F" Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ColorSecundario" EndPoint="0,1" StartPoint="0,0">
         <GradientStop Color="Black" Offset="0.0" />
         <GradientStop Color="Black" Offset="1.0" />
     </LinearGradientBrush>
+
+
+
 
     <LinearGradientBrush x:Key="ColorDeshabilitadoSuave" EndPoint="0,1" StartPoint="0,0">
         <GradientStop Color="#e3e3e3" Offset="0.0" />
@@ -25,21 +49,13 @@
         <GradientStop Color="#42BCF9" Offset="0.0" />
         <GradientStop Color="#42BCF9" Offset="1.0" />
     </LinearGradientBrush>
-    
-    <LinearGradientBrush x:Key="ColorPrimario" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="#FFFEFEFE" Offset="0.0" />
-        <GradientStop Color="#FFFEFEFE" Offset="1.0" />
-    </LinearGradientBrush>
 
     <LinearGradientBrush x:Key="ColorPrimarioOscuro" EndPoint="0,1" StartPoint="0,0">
         <GradientStop Color="#FFD7D7D7" Offset="0.0" />
         <GradientStop Color="#FFD7D7D7" Offset="1.0" />
     </LinearGradientBrush>
 
-    <LinearGradientBrush x:Key="ColorSecundario" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="Black" Offset="0.0" />
-        <GradientStop Color="Black" Offset="1.0" />
-    </LinearGradientBrush>
+
 
     <LinearGradientBrush x:Key="ColorAvisos" EndPoint="0,1" StartPoint="0,0">
         <GradientStop Color="Red" Offset="0.0" />

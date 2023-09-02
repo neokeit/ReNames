@@ -121,52 +121,52 @@
     <value>By @Neokeit</value>
   </data>
   <data name="ByPosition" xml:space="preserve">
-    <value>By Position</value>
+    <value>Nach Position</value>
   </data>
   <data name="ByText" xml:space="preserve">
-    <value>By Text</value>
+    <value>Per Text</value>
   </data>
   <data name="ByTextStartEnd" xml:space="preserve">
-    <value>By Start to End</value>
+    <value>Von Anfang bis Ende</value>
   </data>
   <data name="Characters" xml:space="preserve">
-    <value>Characters</value>
+    <value>Figuren</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Schließen</value>
   </data>
   <data name="DirectoryPath" xml:space="preserve">
-    <value>Directory Path</value>
+    <value>Verzeichnispfad</value>
   </data>
   <data name="End" xml:space="preserve">
-    <value>End</value>
+    <value>Ende</value>
   </data>
   <data name="English" xml:space="preserve">
-    <value>English</value>
+    <value>Englisch</value>
   </data>
   <data name="Example" xml:space="preserve">
-    <value>Example</value>
+    <value>Beispiel</value>
   </data>
   <data name="Files" xml:space="preserve">
-    <value>Files</value>
+    <value>Dateien</value>
   </data>
   <data name="From" xml:space="preserve">
-    <value>From</value>
+    <value>Aus</value>
   </data>
   <data name="German" xml:space="preserve">
-    <value>German</value>
+    <value>Deutsch</value>
   </data>
   <data name="HideExtensions" xml:space="preserve">
-    <value>Hide Extensions</value>
+    <value>Erweiterungen ausblenden</value>
   </data>
   <data name="Italian" xml:space="preserve">
-    <value>Italian</value>
+    <value>Italienisch</value>
   </data>
   <data name="Lenguages" xml:space="preserve">
-    <value>Lenguages</value>
+    <value>Sprachen</value>
   </data>
   <data name="Modified" xml:space="preserve">
-    <value>Modified</value>
+    <value>Geändert</value>
   </data>
   <data name="Original" xml:space="preserve">
     <value>Original</value>
@@ -175,33 +175,33 @@
     <value>Position</value>
   </data>
   <data name="Referesh" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Aktualisierung</value>
   </data>
   <data name="ReplacementText" xml:space="preserve">
-    <value>Replacement Text</value>
+    <value>Ersatztext</value>
   </data>
   <data name="ReplaceText" xml:space="preserve">
-    <value>Replace Text</value>
+    <value>Text ersetzen</value>
   </data>
   <data name="ReplaceType" xml:space="preserve">
-    <value>Replace Type</value>
+    <value>Typ ersetzen</value>
   </data>
   <data name="SelectFolder" xml:space="preserve">
-    <value>Select Folder</value>
+    <value>Ordner auswählen</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Einstellungen</value>
   </data>
   <data name="ShowOnlyChanges" xml:space="preserve">
-    <value>Show Only Changes</value>
+    <value>Nur Änderungen anzeigen</value>
   </data>
   <data name="Spanish" xml:space="preserve">
-    <value>Spanish</value>
+    <value>Spanisch</value>
   </data>
   <data name="Start" xml:space="preserve">
-    <value>Start</value>
+    <value>Beginn</value>
   </data>
   <data name="Version" xml:space="preserve">
-    <value>Version:</value>
+    <value>Ausführung:</value>
   </data>
 </root>
