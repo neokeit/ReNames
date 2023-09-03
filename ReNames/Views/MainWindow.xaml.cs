@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Media;
 using Ookii.Dialogs.WinForms;
+using ReNames.Helppers;
 using ReNames.Models;
 
 namespace ReNames
@@ -28,8 +29,8 @@ namespace ReNames
         private void LoadConfig()
         {
             _config = ConfigHelpper.LoadConfig();
-            ckOnlyChanges.IsChecked = _config.ShowOnlyChanges;
-            ckHideExtensions.IsChecked = _config.HideExtensions;
+            CkOnlyChanges.IsChecked = _config.ShowOnlyChanges;
+            CkHideExtensions.IsChecked = _config.HideExtensions;
             if (string.IsNullOrEmpty(_config.Language))
             {
                 _config.Language =  CultureInfo.CurrentCulture.Parent.Name;
@@ -50,7 +51,7 @@ namespace ReNames
 
         private void Directory_Click(object sender, EventArgs e)
         {
-            lstOriginal.Items.Clear();
+            LstOriginal.Items.Clear();
             var dlg = new VistaFolderBrowserDialog();
             dlg.ShowNewFolderButton = true;
             if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -63,7 +64,7 @@ namespace ReNames
         {
             if (string.IsNullOrEmpty(path)) return;
 
-            lstOriginal.Items.Clear();
+            LstOriginal.Items.Clear();
             TxPath.Text = path;
             _files = Directory.GetFiles(path, "*.*");
 
@@ -71,18 +72,18 @@ namespace ReNames
             {
                 var fileName =Path.GetFileName(file);
                 fileName=CleanFileName(fileName);
-                lstOriginal.Items.Add(fileName);
+                LstOriginal.Items.Add(fileName);
             }
 
             GetNumberFiles();
-            lstModifieds.Items.Clear();
+            LstModifieds.Items.Clear();
         }
 
         private void GetNumberFiles()
         {
             TbNumOriginal.Text = "";
-            if (lstOriginal.Items.Count > 0)
-                TbNumOriginal.Text = "(" + lstOriginal.Items.Count + ")";
+            if (LstOriginal.Items.Count > 0)
+                TbNumOriginal.Text = "(" + LstOriginal.Items.Count + ")";
         }
         
         private void GetNumberModifiedFiles(int number)
@@ -144,14 +145,14 @@ namespace ReNames
         private void Previsualizar_Click(object sender, EventArgs e)
         {
             int filesModified = 0;
-            lstModifieds.Items.Clear();
+            LstModifieds.Items.Clear();
             if (_files == null) return;
             foreach (var file in _files)
             {
                 var fileNameOrigen = CleanFileName(file);
                 var cambio= GetTextoRemplazable(fileNameOrigen);
                 var add = true;
-                if (ckOnlyChanges.IsChecked==true)
+                if (CkOnlyChanges.IsChecked==true)
                 {
                     if (string.IsNullOrEmpty(cambio) || cambio == fileNameOrigen) add=false;
                 }
@@ -159,7 +160,7 @@ namespace ReNames
                 if (add)
                 {
                     filesModified++;
-                    lstModifieds.Items.Add(cambio);
+                    LstModifieds.Items.Add(cambio);
                 }
             }
             
@@ -168,7 +169,7 @@ namespace ReNames
 
         private string CleanFileName(string path)
         {
-            if (ckHideExtensions.IsChecked == true)
+            if (CkHideExtensions.IsChecked == true)
             {
                 path = Path.GetFileName(path);
                 var extension = Path.GetExtension(path);
@@ -186,7 +187,7 @@ namespace ReNames
         private void Aplicar_Click(object sender, EventArgs e)
         {
             int filesModified = 0;
-            lstModifieds.Items.Clear();
+            LstModifieds.Items.Clear();
             foreach (var file in _files)
             {
                 var cambio = GetTextoRemplazable(file);
@@ -195,7 +196,7 @@ namespace ReNames
                     filesModified++;
                 }
                 cambio = cambio.Replace(":", "-");
-                lstModifieds.Items.Add(cambio);
+                LstModifieds.Items.Add(cambio);
 
                 var origen = file;
                 var destino = TxPath.Text + "\\" + cambio;
@@ -216,14 +217,14 @@ namespace ReNames
         }
         private void lstOriginal_SelectedIndexChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (lstOriginal.SelectedIndex == -1) return;
-            var item = lstOriginal.SelectedItem;
+            if (LstOriginal.SelectedIndex == -1) return;
+            var item = LstOriginal.SelectedItem;
             SetTextValueOriginal(item.ToString());
         }
         private void lstModifieds_SelectedIndexChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (lstModifieds.SelectedIndex == -1) return;
-            var item = lstModifieds.SelectedItem;
+            if (LstModifieds.SelectedIndex == -1) return;
+            var item = LstModifieds.SelectedItem;
             SetTextValueOriginal(item.ToString());
         }
         private void SetTextValueOriginal(string? value)
@@ -277,7 +278,7 @@ namespace ReNames
 
         private void InitByPosition()
         {
-            var selectedItem = lstOriginal.Items[0];
+            var selectedItem = LstOriginal.Items[0];
             if (selectedItem != null)
                 SetTextValueOriginal(selectedItem.ToString());
         }
@@ -351,16 +352,16 @@ namespace ReNames
         private void CkHideExtensions_OnChecked(object sender, RoutedEventArgs e)
         {
             if (_config==null) return;
-            if (_config.HideExtensions == (ckHideExtensions.IsChecked==true)) return;
-            _config.HideExtensions = (ckHideExtensions.IsChecked==true);
+            if (_config.HideExtensions == (CkHideExtensions.IsChecked==true)) return;
+            _config.HideExtensions = (CkHideExtensions.IsChecked==true);
             SaveConfig();
         }
 
         private void CkOnlyChanges_OnChecked(object sender, RoutedEventArgs e)
         {
             if (_config==null) return;
-            if (_config.ShowOnlyChanges == (ckOnlyChanges.IsChecked==true)) return;
-            _config.ShowOnlyChanges = (ckOnlyChanges.IsChecked==true);
+            if (_config.ShowOnlyChanges == (CkOnlyChanges.IsChecked==true)) return;
+            _config.ShowOnlyChanges = (CkOnlyChanges.IsChecked==true);
             SaveConfig();
         }
 

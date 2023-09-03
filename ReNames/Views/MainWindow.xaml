@@ -56,12 +56,12 @@
                         <TextBlock Text="{x:Static rs:Resources.Original}" Margin="10,0,5,0"/>
                         <TextBlock Name="TbNumOriginal"/>
                     </StackPanel>
-                    <ListView Grid.Row="3" Grid.Column="0" Name="lstOriginal" Margin="10,5,5,5" FontWeight="Normal" SelectionChanged="lstOriginal_SelectedIndexChanged"/>
+                    <ListView Grid.Row="3" Grid.Column="0" Name="LstOriginal" Margin="10,5,5,5" FontWeight="Normal" SelectionChanged="lstOriginal_SelectedIndexChanged"/>
                     <StackPanel Grid.Row="2" Grid.Column="1"  Orientation="Horizontal">
                         <TextBlock Text="{x:Static rs:Resources.Modified}" Margin="10,0,5,0"/>
                         <TextBlock Name="TbNumModified"/>
                     </StackPanel>
-                    <ListView Grid.Row="3" Grid.Column="1" Name="lstModifieds" FontWeight="Normal" Margin="5,5,10,5" SelectionChanged="lstModifieds_SelectedIndexChanged"/>
+                    <ListView Grid.Row="3" Grid.Column="1" Name="LstModifieds" FontWeight="Normal" Margin="5,5,10,5" SelectionChanged="lstModifieds_SelectedIndexChanged"/>
                 </Grid>
             </Border>
             <Border Grid.Row="2" Style="{DynamicResource BorderGroup}">
@@ -166,17 +166,17 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="18"  Margin="0,10" Text="Configuration" VerticalAlignment="Center"/>
-                <Button  Grid.Column="1" HorizontalAlignment="Right" Width="35" Height="35" Margin="5,0"
-                         Click="CloseConfig_Click" Style="{DynamicResource ImageButton}" ToolTip="{x:Static rs:Resources.Close}">
+                <Button Grid.Row="0"   Grid.Column="1" HorizontalAlignment="Right" Width="35" Height="35" Margin="5,0"
+                        Click="CloseConfig_Click" Style="{DynamicResource ImageButton}" ToolTip="{x:Static rs:Resources.Close}">
                     <Image Source="{StaticResource ImgClose}"/>
                 </Button>
-                <Separator Grid.Row="1" Grid.ColumnSpan="2" />
-                <ToggleButton Grid.Row="2" Grid.ColumnSpan="2" Name="ckHideExtensions" Content="{x:Static rs:Resources.HideExtensions}" 
+                <Separator Grid.Column="0"  Grid.Row="1" Grid.ColumnSpan="2" />
+                <ToggleButton Grid.Column="0"  Grid.Row="2" Grid.ColumnSpan="2" Name="CkHideExtensions" Content="{x:Static rs:Resources.HideExtensions}" 
                               IsChecked="True" Style="{StaticResource ToggleSwitchLeftStyle}" Margin="5,5,5,5" Checked="CkHideExtensions_OnChecked" Unchecked="CkHideExtensions_OnChecked"/>
-                <ToggleButton Grid.Row="3" Grid.ColumnSpan="2" Name="ckOnlyChanges" Content="{x:Static rs:Resources.ShowOnlyChanges}" IsChecked="True" 
+                <ToggleButton Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Name="CkOnlyChanges" Content="{x:Static rs:Resources.ShowOnlyChanges}" IsChecked="True" 
                               Style="{StaticResource ToggleSwitchLeftStyle}" Margin="5,5,5,5" Checked="CkOnlyChanges_OnChecked" Unchecked="CkOnlyChanges_OnChecked"/>
-                <Label Grid.Row="4" Grid.ColumnSpan="2" Content="{x:Static rs:Resources.Lenguages}" VerticalAlignment="Center"/>
-                <ComboBox Grid.Row="4" Grid.Column="1" Name="CbLanguage" Margin="5,5,5,5" HorizontalAlignment="Right" DropDownClosed="CbLanguage_OnDropDownClosed"  >
+                <Label Visibility="Collapsed" Grid.Column="0"  Grid.Row="4" Grid.ColumnSpan="2" Content="{x:Static rs:Resources.Lenguages}" VerticalAlignment="Center"/>
+                <ComboBox Visibility="Collapsed" Grid.Row="4" Grid.Column="1" Name="CbLanguage" Margin="5,5,5,5" HorizontalAlignment="Right" DropDownClosed="CbLanguage_OnDropDownClosed"  >
                     <ComboBoxItem Content="{x:Static rs:Resources.English}" Tag="en"/>
                     <ComboBoxItem Content="{x:Static rs:Resources.Spanish}" Tag="es"/>
                     <ComboBoxItem Content="{x:Static rs:Resources.German}" Tag="de"/>

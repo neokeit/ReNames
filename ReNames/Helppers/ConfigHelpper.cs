@@ -3,7 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 using ReNames.Models;
 
-namespace ReNames
+namespace ReNames.Helppers
 {
     public class ConfigHelpper
     {
