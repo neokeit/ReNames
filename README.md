@@ -28,7 +28,7 @@ I'm a full stack developer...
 
 ## Release
 
-- ⬇️ [zip File](https://mega.nz/file/qsUhwY7Z#jKuKmgsp5Z9A7m4gvqkCd833sixsyF-pAub_nCd1U9c)
+- ⬇️ [Release](https://github.com/neokeit/ReNames/releases/tag/1.0.0.2)
 
 
 ## Tech stack & Open-source libraries
