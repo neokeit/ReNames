@@ -10,7 +10,7 @@ using Ookii.Dialogs.WinForms;
 using ReNames.Helppers;
 using ReNames.Models;
 
-namespace ReNames
+namespace ReNames.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
